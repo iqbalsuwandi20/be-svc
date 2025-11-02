@@ -1,0 +1,18 @@
+# === Core Framework ===
+fastapi==0.115.0
+uvicorn[standard]==0.30.3
+
+# === Database ===
+pymongo==4.8.0
+
+# === Security & Authentication ===
+python-jose==3.3.0
+passlib[bcrypt]==1.7.4
+email-validator==2.2.0
+
+# === File Upload ===
+python-multipart==0.0.9
+
+# === Optional (Recommended for Better Dev Experience) ===
+python-dotenv==1.0.1
+pydantic==2.8.2
