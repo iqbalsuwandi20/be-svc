@@ -44,6 +44,21 @@ Backend Service menggunakan **FastAPI** dan **MongoDB** untuk mengelola data Use
 
 ---
 
+## 🎥 Screen Recording Demo
+
+Lihat demo lengkap penggunaan API dengan Swagger UI:
+
+👉 **[Klik di sini untuk menonton Screen Recording](https://drive.google.com/drive/folders/1GfCd1oXINHK0LLYxwE6Qx4eyBe2o0q44?usp=sharing)**
+
+Video ini menunjukkan:
+- ✅ Cara login dan mendapatkan JWT token
+- ✅ Menggunakan Swagger UI untuk testing
+- ✅ CRUD operations untuk Users & Products
+- ✅ Upload gambar produk
+- ✅ Testing semua endpoint
+
+---
+
 ## 📦 Instalasi
 
 ### 1️⃣ Clone Repository
@@ -351,3 +366,15 @@ http://127.0.0.1:8000/uploads/20241103121045_meja_jati.png
 - 📡 **Ubah BASE_URL** di `products.py` sesuai IP server Anda
 - 🗄️ **Database default:** `product_management`
 - 📁 **Folder uploads** harus writeable
+
+### Production Checklist
+
+- [ ] Set `SECRET_KEY` yang strong di `.env`
+- [ ] Gunakan MongoDB connection string production
+- [ ] Disable `--reload` di uvicorn
+- [ ] Set proper CORS origins
+- [ ] Gunakan HTTPS untuk production
+- [ ] Setup proper file upload limits
+- [ ] Backup database secara berkala
+
+---
